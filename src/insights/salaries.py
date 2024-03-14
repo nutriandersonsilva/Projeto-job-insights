@@ -1,7 +1,8 @@
 from typing import Union, List, Dict
 from src.insights.jobs import ProcessJobs
 
-   class ProcessSalaries(ProcessJobs):
+
+class ProcessSalaries(ProcessJobs):
     def __init__(self):
         super().__init__()
 
@@ -50,5 +51,4 @@ from src.insights.jobs import ProcessJobs
                     valid_jobs.append(job)
             except ValueError as e:
                 print(f"Ignorando emprego inválido: {e}")
-
         return valid_jobs

@@ -1,7 +1,8 @@
 from typing import List, Dict
 import csv
 
-  class ProcessJobs:
+
+class ProcessJobs:
     def __init__(self) -> None:
         self.jobs_list = list()
 
@@ -30,4 +31,3 @@ import csv
             jobs = [job for job in jobs if job.get(key) == value]
 
         return jobs
-    
